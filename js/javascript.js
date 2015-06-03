@@ -13,6 +13,9 @@ function contact(){
 	
 }
 
+function upLoad(){
+	alert('please select a file to upload');
+}
 
 <!-- Shopping Cart Popover-->
 $(function(){
@@ -29,12 +32,15 @@ $(function(){
 $(function() {
 	$('#ei-slider').eislideshow({
 		animation			: 'center',
-		autoplay			: true,
+		autoplay			: false,
 		slideshow_interval	: 3000,
 		titlesFactor		: 0
 	});
 });
 
+function Searching(){
+	window.location.href = "search.html";
+}
 
 <!-- scroll_top_btn -->
 $(document).ready(function() {

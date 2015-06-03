@@ -7,7 +7,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE HTML>
 <html>
 <head>
-	<title>The Fooseshoes Website Template | Products :: w3layouts</title>
+	<title>CustomTreds</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 	<link href='http://fonts.googleapis.com/css?family=Maven+Pro:400,900,700,500' rel='stylesheet' type='text/css' />
@@ -38,7 +38,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<div class="wrap">
 			<div class="header">
 				<div class="logo">
-					<a href="index.html"><img src="images/logo.png" alt=""/></a>
+					<a href="index.html"><img src="images/logo.png" alt="CustomTreds Logo"/></a>
 				</div>
 				
 				<div class="log_reg">
@@ -51,15 +51,15 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				</div>	
 				
 				<div class="web_search">
-					<form>
+					<form  onclick="window.location='search.html';">
 						<input type="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" />
 						<input type="submit" value=" " />
 					</form>
 				</div>						
 				
 				<div class="clear"></div>
-		</div>	
-	</div>
+			</div>	
+		</div>
 	</div>
 	
 	<!-- start header_btm -->
@@ -67,12 +67,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<div class="header_btm">
 			<div class="menu">
 				<ul>
-					<li><a href="index.html">HOME</a></li>
+					<li class="active"><a href="index.html">HOME</a></li>
 					<li><a href="products.html">PRODUCTS</a></li>
-					<li class="active"><a href="about.html">ABOUT</a></li>
-					<li><a href="page.html">PAGE</a></li>
+					<li><a href="newArrivals.html">NEW ARRIVALS</a></li>
 					<li><a href="blog.html">BLOG</a></li>
-					<li><a href="contact.html">CONTACT</a></li>
+					<li><a href="about.html">ABOUT</a></li>
+					<li><a href="offlineOrder.html">OFFLINE ORDER</a></li>
 					<div class="clear"></div>
 				</ul>
 			</div>
@@ -84,15 +84,16 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					<li><a href="index.html">HOME</a></li>
 					<li><a href="products.html">PRODUCTS</a></li>
 					<li><a href="about.html">ABOUT</a></li>
-					<li><a href="page.html">PAGE</a></li>
+					<li><a href="newArrivals.html">NEW ARRIVALS</a></li>
 					<li><a href="blog.html">BLOG</a></li>
-					<li><a href="contact.html">CONTACT</a></li>
+					<li><a href="offlineOrder.html">OFFLINE ORDER</a></li>
 					<div class="clear"></div>
 				</ul>
 			</nav>
 			<div class="header_right">
 			<ul>
-				<li><a href="#"><i  class="art"></i><span class="color1">30</span></a></li>
+				<li><a href="favorites.html"><i  class="art"></i><span class="color1">30</span></a></li>
+				
 				<li><a href="#" class="cartInfo"><i  class="cart"></i><span class="simpleCart_quantity"></span></a></li>
 				
 				<div id="cartPopover" style="display: none;">
@@ -103,7 +104,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<div class="right"><strong>Total: </strong><span class="simpleCart_total"></span></div>
 					</div>
 					<div id="popoverButtons" class="clearfix">
-						<a href="/cart/" class="hudbtn left">View</a>
+						<a href="cart.html" class="hudbtn left">View</a>
 						<a href="javascript:;" class="simpleCart_checkout hudbtn primary right">Checkout</a>
 					</div>
 				</div>
@@ -111,7 +112,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		</div>
 			<div class="clear"></div>
 		</div>
-
+		
 	</div>
 
 	<!-- start main -->
@@ -196,7 +197,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<input type="submit" value="sign in" id="register-submit">
 					</div>
 					<div class="forget">
-						<a href="#">forgot your password</a>
+						<a href="index.html">forgot your password</a>
 					</div>
 				</form>
 				<!-- /Form -->

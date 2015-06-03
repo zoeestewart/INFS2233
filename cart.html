@@ -85,100 +85,104 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 </script>
 
-<script>
-	.simpleCart_items table{
-		padding: 10px;
+<style>
+	.simpleCart_items td{
+		padding: 30px;
 	}
 	
-</script>
+	table thead{
+		border-bottom: solid;
+	}
+	table tbody {
+		border-bottom: solid 1px;
+	}
+	
+</style>
 	
 </head>
 
 <body>
-<!-- start header (login and register) -->
-<div class="top_bg">
+	<!-- start header (login and register) -->
+	<div class="top_bg">
+		<div class="wrap">
+			<div class="header">
+				<div class="logo">
+					<a href="index.html"><img src="images/logo.png" alt="CustomTreds Logo"/></a>
+				</div>
+				
+				<div class="log_reg">
+					<ul>
+						<li><a href="login.html">Login</a> </li>
+						<span class="log"> or </span>
+						<li><a href="register.html">Register</a> </li>								   
+						<div class="clear"></div>
+					</ul>
+				</div>	
+				
+				<div class="web_search">
+					<form  onclick="window.location='search.html';">
+						<input type="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" />
+						<input type="submit" value=" " />
+					</form>
+				</div>						
+				
+				<div class="clear"></div>
+			</div>	
+		</div>
+	</div>
+	
+	<!-- start header_btm -->
 	<div class="wrap">
-		<div class="header">
-			<div class="logo">
-				<a href="index.html"><img src="images/logo.png" alt=""/></a>
-			</div>
-			
-		 	<div class="log_reg">
+		<div class="header_btm">
+			<div class="menu">
 				<ul>
-					<li><a href="login.html">Login</a> </li>
-					<span class="log"> or </span>
-					<li><a href="register.html">Register</a> </li>								   
+					<li class="active"><a href="index.html">HOME</a></li>
+					<li><a href="products.html">PRODUCTS</a></li>
+					<li><a href="newArrivals.html">NEW ARRIVALS</a></li>
+					<li><a href="blog.html">BLOG</a></li>
+					<li><a href="about.html">ABOUT</a></li>
+					<li><a href="offlineOrder.html">OFFLINE ORDER</a></li>
 					<div class="clear"></div>
 				</ul>
-			</div>	
-			
-			<div class="web_search">
-		 		<form>
-					<input type="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" />
-					<input type="submit" value=" " />
-				</form>
-	    	</div>						
-			
-			<div class="clear"></div>
-	</div>	
-</div>
-</div>
-
-<!-- start header_btm -->
-<div class="wrap">
-	<div class="header_btm">
-		<div class="menu">
-			<ul>
-				<li><a href="index.html">HOME</a></li>
-				<li class="active"><a href="products.html">PRODUCTS</a></li>
-				<li><a href="about.html">ABOUT</a></li>
-				<li><a href="page.html">PAGE</a></li>
-				<li><a href="blog.html">BLOG</a></li>
-				<li><a href="contact.html">CONTACT</a></li>
-				<div class="clear"></div>
-			</ul>
-		</div>
-		<div id="smart_nav">
-			<a class="navicon" href="#menu-left"> </a>
-		</div>
-		<nav id="menu-left">
-			<ul>
-				<li><a href="index.html">HOME</a></li>
-				<li><a href="products.html">PRODUCTS</a></li>
-				<li><a href="about.html">ABOUT</a></li>
-				<li><a href="page.html">PAGE</a></li>
-				<li><a href="blog.html">BLOG</a></li>
-				<li><a href="contact.html">CONTACT</a></li>
-				<div class="clear"></div>
-			</ul>
-		</nav>
-		<div class="header_right">
-		<ul>
-			<li><a href="#"><i  class="art"></i><span class="color1">30</span></a></li>
-			<li><a href="#" class="cartInfo"><i  class="cart"></i><span class="simpleCart_quantity"></span></a></li>
-			
-			<div id="cartPopover" style="display: none;">
-				<div id="triangle">▲</div>
-				<div class="simpleCart_items"></div>
-				<div id="cartData" class="clearfix">
-					<div class="left"><strong>Items: </strong><span class="simpleCart_quantity"></span></div>
-					<div class="right"><strong>Total: </strong><span class="simpleCart_total"></span></div>
-				</div>
-				<div id="popoverButtons" class="clearfix">
-					<a href="/cart/" class="hudbtn left">View</a>
-					<a href="javascript:;" class="simpleCart_checkout hudbtn primary right">Checkout</a>
-				</div>
 			</div>
-		</ul>
-	</div>
-		<div class="clear"></div>
-	</div>
-	
-			
+			<div id="smart_nav">
+				<a class="navicon" href="#menu-left"> </a>
+			</div>
+			<nav id="menu-left">
+				<ul>
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="products.html">PRODUCTS</a></li>
+					<li><a href="about.html">ABOUT</a></li>
+					<li><a href="newArrivals.html">NEW ARRIVALS</a></li>
+					<li><a href="blog.html">BLOG</a></li>
+					<li><a href="offlineOrder.html">OFFLINE ORDER</a></li>
+					<div class="clear"></div>
+				</ul>
+			</nav>
+			<div class="header_right">
+			<ul>
+				<li><a href="favorites.html"><i  class="art"></i><span class="color1">4</span></a></li>
+				
+				<li><a href="#" class="cartInfo"><i  class="cart"></i><span class="simpleCart_quantity"></span></a></li>
+				
+				<div id="cartPopover" style="display: none;">
+					<div id="triangle">▲</div>
+					
+					<div id="cartData" class="clearfix">
+						<div class="left"><strong>Items: </strong><span class="simpleCart_quantity"></span></div>
+						<div class="right"><strong>Total: </strong><span class="simpleCart_total"></span></div>
+					</div>
+					<div id="popoverButtons" class="clearfix">
+						<a href="cart.html" class="hudbtn left">View</a>
+						<a href="javascript:;" class="simpleCart_checkout hudbtn primary right">Checkout</a>
+					</div>
+				</div>
+			</ul>
+		</div>
+			<div class="clear"></div>
+		</div>
 		
-		
-	
-</div>
+	</div>
 
 
 
@@ -188,7 +192,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<div class="main">
 		<div class="top_main">
 		<h2>Your Cart</h2>
-		<a href="javascript:;" class="simpleCart_empty"> Empty</a>
+		
 		</br></br></br></br>
 		<div class="simpleCart_items"></div>
 		
@@ -201,29 +205,53 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	</div>
 </div>
 
-<!-- start footer -->
-
-<div class="footer_bg">
-	<div class="wrap">
-		<div class="footer">
-		
-			<a href="#" id="toTop" style="display: block;"><span id="toTopHover" style="opacity: 1;"></span></a>
-			<!--end scroll_top_btn -->
-			<div class="f_nav1">
-		<ul>
-			<li><a href="#">home /</a></li>
-			<li><a href="#">support /</a></li>
-			<li><a href="#">Terms and conditions /</a></li>
-			<li><a href="#">Faqs /</a></li>
-			<li><a href="#">Contact us</a></li>
-		</ul>
-		</div>
-			<div class="copy">
-				<p class="link"><span>© All rights reserved | Template by&nbsp;<a href="http://w3layouts.com/"> W3Layouts</a></span></p>
+	!-- start footer -->
+		<div class="footer_mid">
+			<div class="wrap">
+				<div class="footer">
+					<div class="f_search">
+						<form>
+							<input type="text" value="" placeholder="Enter email for newsletter" />
+							<input type="submit" onClick="Newsletter()" class="newsletter" value=""/>
+						</form>
+						
+					</div>
+					<div class="soc_icons">
+							<ul>
+								<li><a class="icon1" target="_blank" href="https://www.facebook.com/pages/Custom-shoes/450584661782353?fref=ts"></a></li>
+								<li><a class="icon2" target="_blank" href="https://twitter.com/customers_shoes"></a></li>
+								<li><a class="icon3" target="_blank" href="https://plus.google.com/+shoesofprey/posts"></a></li>
+								<li><a class="icon4" target="_blank" href="https://www.linkedin.com/company/woodys-custom-kicks-and-apparel"></a></li>
+							</ul>	
+					</div>
+					<div class="clear"> </div>
+				</div>
 			</div>
-			<div class="clear"></div>
-</div>
-	</div>
-</div>
+		</div>
+		
+		<!-- start footer2 -->
+		<div class="footer_bg">
+			<div class="wrap">
+				<div class="footer">
+						
+						 <a href="#" id="toTop" style="display: block;"><span id="toTopHover" style="opacity: 1;"></span></a>
+						<!--end scroll_top_btn -->
+					<div class="f_nav1">
+						<ul>
+							<li><a href="index.html">Home /</a></li>
+							<li><a href="disclaimer.html">Disclaimer /</a></li>
+							<li><a href="tandcs.html">Terms and conditions /</a></li>
+							<li><a href="faqs.html">FAQS /</a></li>
+							<li><a href="contact.html">Contact us</a></li>
+						</ul>
+						</div>
+					<div class="copy">
+						<p class="link"><span>© All rights reserved | Template by&nbsp;<a target="_blank" href="http://w3layouts.com/"> W3Layouts</a></span></p>
+						<p class="link"><span>This page is fictional. It is for assessment purposes only in the course of INFS2233, Electronic Commerce Fundamentals, at The University of Queensland.</span></p>
+					</div>
+					<div class="clear"> </div>
+				</div>
+			</div>
+		</div>
 </body>
 </html>
