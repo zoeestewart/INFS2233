@@ -29,29 +29,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<script type="text/javascript" src="js/javascript.js"></script>
 		<script type="text/javascript" src="js/SimpleCart.js"></script>
 		
-		<script type="text/javascript">
-			$(function() {
-				$('#ei-slider').eislideshow({
-					animation			: 'center',
-					autoplay			: true,
-					slideshow_interval	: 3000,
-					titlesFactor		: 0
-				});
-			});
-		</script>
 		
 		<!-- start top_js_button -->
 		<script type="text/javascript" src="js/move-top.js"></script>
 		
-		<script type="text/javascript">
-			jQuery(document).ready(function($) {
-				$(".scroll").click(function(event){		
-					event.preventDefault();
-					$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
-				});
-			});
-		</script>
-	
+
 	</head>
 	<div id="opacitys" style="min-height:100vh"></div>
 	
@@ -63,7 +45,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<div class="wrap">
 			<div class="header">
 				<div class="logo">
-					<a href="index.html"><img src="images/logo.png" alt=""/></a>
+					<a href="index.html"><img src="images/logo.png" alt="CustomTreds Logo"/></a>
 				</div>
 				
 				<div class="log_reg">
@@ -76,7 +58,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				</div>	
 				
 				<div class="web_search">
-					<form>
+					<form  onclick="window.location='search.html';">
 						<input type="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" />
 						<input type="submit" value=" " />
 					</form>
@@ -97,7 +79,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					<li><a href="newArrivals.html">NEW ARRIVALS</a></li>
 					<li><a href="blog.html">BLOG</a></li>
 					<li><a href="about.html">ABOUT</a></li>
-					<li><a href="contact.html">CONTACT</a></li>
+					<li><a href="offlineOrder.html">OFFLINE ORDER</a></li>
 					<div class="clear"></div>
 				</ul>
 			</div>
@@ -111,13 +93,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					<li><a href="about.html">ABOUT</a></li>
 					<li><a href="newArrivals.html">NEW ARRIVALS</a></li>
 					<li><a href="blog.html">BLOG</a></li>
-					<li><a href="contact.html">CONTACT</a></li>
+					<li><a href="offlineOrder.html">OFFLINE ORDER</a></li>
 					<div class="clear"></div>
 				</ul>
 			</nav>
 			<div class="header_right">
 			<ul>
-				<li><a href="#"><i  class="art"></i><span class="color1">30</span></a></li>
+				<li><a href="favorites.html"><i  class="art"></i><span class="color1">4</span></a></li>
 				
 				<li><a href="#" class="cartInfo"><i  class="cart"></i><span class="simpleCart_quantity"></span></a></li>
 				
@@ -155,79 +137,61 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                             	
                             </div>
                         </li>
+                      
                         <li>
-                            <img src="images/Slider/Cshoes2.jpg" alt="image02" />
+                            <img src="images/Slider/Cshoes2.jpg" alt="image03" />
                             <div class="ei-title">
                             	
                             </div>
                         </li>
                         <li>
-                            <img src="images/Slider/Cshoes3.jpg" alt="image03" />
+                            <img src="images/Slider/Cshoes3.jpg" alt="image04"/>
                             <div class="ei-title">
                             	
                             </div>
                         </li>
                         <li>
-                            <img src="images/Slider/Cshoes4.jpg" alt="image04"/>
+                            <img src="images/Slider/Cshoes4.jpg" alt="image05"/>
                             <div class="ei-title">
                             	
-                            </div>
-                        </li>
-                        <li>
-                            <img src="images/Slider/slider-image1.jpg" alt="image05"/>
-                            <div class="ei-title">
-                            	<h3 class="btn">$145.99</h3>
-                                <h2>pink shoes <br/>	2013 collections</h2>
-                                <h3 class="active">It is a long established fact that a reader</br>
-                                	Lorem Ipsum is that it has a more-or-less 
-                                </h3>
-                                <h3>
-                                	
-                                </h3>
                             </div>
                         </li>
                        
                         <li>			
-							<img src="images/Slider/placemap.jpg" width="145" height="126" alt="image06" usemap="#planetmap" />
+							<img src="images/Slider/placemap.png" width="145" height="126" alt="image06" usemap="#planetmap" alt="Image Map"/>
 
 							<map name="planetmap">
-							  <area shape="rect" coords="0,0,725,250" href="products.html" alt="products" />
-							  <area shape="rect" coords="725,0,1456,250" href="about.html" alt="about" />
-							  <area shape="rect" coords="0,250,725,460" href="contact.html" alt="contact" />
-							  <area shape="rect" coords="725,250,1456,460" href="home.html" alt="home" />							  
+							  <area shape="rect" coords="0,0,725,250" href="index.html" alt="products" />
+							  <area shape="rect" coords="725,0,1456,250" href="offlineOrder.html" alt="about" />
+							  <area shape="rect" coords="0,250,725,460" href="about.html" alt="contact" />
+							  <area shape="rect" coords="725,250,1456,460" href="products.html" alt="home" />							  
 							</map>	
 						</li>
                    
                     </ul><!-- ei-slider-large -->
                     <ul class="ei-slider-thumbs">
                         <li class="ei-slider-element">Current</li>
-						<li>
-							<a href="#">
-								<span class="active">pink shoes</span>
-								<p>now of $145.99</p> 
-							</a>
-							<img src="images/thumbs/1.jpg" alt="thumb01" />
-						</li>
+						
                         <li class="hide">
-                        	<a href="#"> <span>anns field</span><p>limited edition</p> </a>
-                        	<img src="images/thumbs/2.jpg" alt="thumb01" />
+                        	<a href=""> <span class="active">anns field</span><p>Welcome!</p> </a>
+                        	<img src="images/thumbs/1.jpg" alt="thumb02" style="height:60; width:150;"/>
                         </li>
                         <li  class="hide1">
-                        	<a href="#"><span>prada</span><p>summer is coming</p></a>
-                        	<img src="images/thumbs/3.jpg" alt="thumb02" />
+                        	<a href=""><span>TNMT</span><p>new kid designs!</p></a>
+                        	<img src="images/thumbs/2.jpg" alt="thumb03" style="height:60; width:150;"/>
                         </li>
                         <li class="hide1">
-                        	<a href="#"><span>casa devi</span><p>all colors available</p> </a>
-                        	<img src="images/thumbs/4.jpg" alt="thumb03" />
+                        	<a href=""><span>Doctor Who</span><p>new designs!</p> </a>
+                        	<img src="images/thumbs/3.jpg" alt="thumb04" style="height:60; width:150;"/>
                         </li>
                         <li>
-                        	<a href="#"><span>mellow yellow</span><p>free delivery</p> </a>
-                        	<img src="images/thumbs/1.jpg" alt="thumb04" />
+                        	<a href=""><span>Robots are here!</span><p>new designs</p> </a>
+                        	<img src="images/thumbs/4.jpg" alt="thumb05" style="height:60; width:150;"/>
                         </li>
                        
                         <li>
-                        	<a href="#"><span>anns field</span><p>limited edition</p> </a>
-                        	<img src="images/thumbs/6.jpg" alt="thumb07" />
+                        	<a href=""><span>Graphic Map</span><p>image map</p> </a>
+                        	<img src="images/thumbs/5.jpg" alt="thumb06" style="height:60; width:150;"/>
                         </li>
                         
                     </ul><!-- ei-slider-thumbs -->
@@ -241,17 +205,18 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<!-- start image1_of_3 -->
 		<div class="top_bg">
 			<div class="wrap">
+				<div class="ztitle"> It's Easy! Have your shoes in just 3 steps. </div>
 				<div class="main1">
 					<div class="image1_of_3">
-						<img src="images/img1.jpg" alt=""/>
+						<img src="images/img1.jpg" alt="chose your style"/>
 						<a href="details.html"><span class="tag">CHOOSE YOUR STYLE</span></a>
 					</div>
 					<div class="image1_of_3">
-						<img src="images/img2.jpg" alt=""/>
-						<a href="details.html"><span class="tag">CUSTOMISE IT!</span></a>
+						<img src="images/img2.jpg" alt="customise it"/>
+						<a href="details.html"><span class="tag" ">CUSTOMISE IT!</span></a>
 					</div>
 					<div class="image1_of_3">
-						<img src="images/img3.jpg" alt=""/>
+						<img src="images/img3.jpg" alt="buy it"/>
 						<a href="details.html"><span class="tag">BUY IT</span></a>
 					</div>
 					<div class="clear"> </div>

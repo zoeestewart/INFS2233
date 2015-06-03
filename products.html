@@ -1,13 +1,8 @@
-<!--A Design by W3layouts
-Author: W3layout
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
+
 <!DOCTYPE HTML>
 <html>
 <head>
-	<title>The Fooseshoes Website Template | Products :: w3layouts</title>
+	<title>CustomTred</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 	<link href='http://fonts.googleapis.com/css?family=Maven+Pro:400,900,700,500' rel='stylesheet' type='text/css' />
@@ -34,92 +29,93 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 <body>
 <!-- start header (login and register) -->
-<div class="top_bg">
+	<div class="top_bg">
+		<div class="wrap">
+			<div class="header">
+				<div class="logo">
+					<a href="index.html"><img src="images/logo.png" alt="CustomTreds Logo"/></a>
+				</div>
+				
+				<div class="log_reg">
+					<ul>
+						<li><a href="login.html">Login</a> </li>
+						<span class="log"> or </span>
+						<li><a href="register.html">Register</a> </li>								   
+						<div class="clear"></div>
+					</ul>
+				</div>	
+				
+				<div class="web_search">
+					<form  onclick="window.location='search.html';">
+						<input type="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" />
+						<input type="submit" value=" " />
+					</form>
+				</div>						
+				
+				<div class="clear"></div>
+			</div>	
+		</div>
+	</div>
+	
+	<!-- start header_btm -->
 	<div class="wrap">
-		<div class="header">
-			<div class="logo">
-				<a href="index.html"><img src="images/logo.png" alt=""/></a>
-			</div>
-			
-		 	<div class="log_reg">
+		<div class="header_btm">
+			<div class="menu">
 				<ul>
-					<li><a href="login.html">Login</a> </li>
-					<span class="log"> or </span>
-					<li><a href="register.html">Register</a> </li>								   
+					<li><a href="index.html">HOME</a></li>
+					<li class="active"><a href="products.html">PRODUCTS</a></li>
+					<li><a href="newArrivals.html">NEW ARRIVALS</a></li>
+					<li><a href="blog.html">BLOG</a></li>
+					<li><a href="about.html">ABOUT</a></li>
+					<li><a href="offlineOrder.html">OFFLINE ORDER</a></li>
 					<div class="clear"></div>
 				</ul>
-			</div>	
-			
-			<div class="web_search">
-		 		<form>
-					<input type="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" />
-					<input type="submit" value=" " />
-				</form>
-	    	</div>						
-			
-			<div class="clear"></div>
-	</div>	
-</div>
-</div>
-
-<!-- start header_btm -->
-<div class="wrap">
-	<div class="header_btm">
-		<div class="menu">
-			<ul>
-				<li><a href="index.html">HOME</a></li>
-				<li class="active"><a href="products.html">PRODUCTS</a></li>
-				<li><a href="about.html">ABOUT</a></li>
-				<li><a href="page.html">PAGE</a></li>
-				<li><a href="blog.html">BLOG</a></li>
-				<li><a href="contact.html">CONTACT</a></li>
-				<div class="clear"></div>
-			</ul>
-		</div>
-		<div id="smart_nav">
-			<a class="navicon" href="#menu-left"> </a>
-		</div>
-		<nav id="menu-left">
-			<ul>
-				<li><a href="index.html">HOME</a></li>
-				<li><a href="products.html">PRODUCTS</a></li>
-				<li><a href="about.html">ABOUT</a></li>
-				<li><a href="page.html">PAGE</a></li>
-				<li><a href="blog.html">BLOG</a></li>
-				<li><a href="contact.html">CONTACT</a></li>
-				<div class="clear"></div>
-			</ul>
-		</nav>
-		<div class="header_right">
-			<ul>
-			<li><a href="#"><i  class="art"></i><span class="color1">30</span></a></li>
-			<li><a href="#" class="cartInfo"><i  class="cart"></i><span class="simpleCart_quantity"></span></a></li>
-			
-			<div id="cartPopover" style="display: none;">
-				<div id="triangle">▲</div>
-				
-				<div id="cartData" class="clearfix">
-					<div class="left"><strong>Items: </strong><span class="simpleCart_quantity"></span></div>
-					<div class="right"><strong>Total: </strong><span class="simpleCart_total"></span></div>
-				</div>
-				<div id="popoverButtons" class="clearfix">
-					<a href="/cart/" class="hudbtn left">View</a>
-					<a href="javascript:;" class="simpleCart_checkout hudbtn primary right">Checkout</a>
-				</div>
 			</div>
-		</ul>
+			<div id="smart_nav">
+				<a class="navicon" href="#menu-left"> </a>
+			</div>
+			<nav id="menu-left">
+				<ul>
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="products.html">PRODUCTS</a></li>
+					<li><a href="about.html">ABOUT</a></li>
+					<li><a href="newArrivals.html">NEW ARRIVALS</a></li>
+					<li><a href="blog.html">BLOG</a></li>
+					<li><a href="offlineOrder.html">OFFLINE ORDER</a></li>
+					<div class="clear"></div>
+				</ul>
+			</nav>
+			<div class="header_right">
+			<ul>
+				<li><a href="favorites.html"><i  class="art"></i><span class="color1">4</span></a></li>
+				
+				<li><a href="#" class="cartInfo"><i  class="cart"></i><span class="simpleCart_quantity"></span></a></li>
+				
+				<div id="cartPopover" style="display: none;">
+					<div id="triangle">▲</div>
+					
+					<div id="cartData" class="clearfix">
+						<div class="left"><strong>Items: </strong><span class="simpleCart_quantity"></span></div>
+						<div class="right"><strong>Total: </strong><span class="simpleCart_total"></span></div>
+					</div>
+					<div id="popoverButtons" class="clearfix">
+						<a href="cart.html" class="hudbtn left">View</a>
+						<a href="javascript:;" class="simpleCart_checkout hudbtn primary right">Checkout</a>
+					</div>
+				</div>
+			</ul>
 		</div>
-		<div class="clear"></div>
+			<div class="clear"></div>
+		</div>
+		
 	</div>
-
-</div>
 
 <!-- start main -->
 <div class="main_bg">
 	<div class="wrap">
 		<div class="main">
 		<div class="top_main">
-		<h2>Customising your shoe starts here!</h2>
+		<h4 class="theTitles">Customising your shoe starts here!</h4>
 		
 		<div class="clear"></div>
 	</div>
@@ -128,14 +124,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     	<table>
     		<tr>
     			<th> 
-    			<a href="details.html">
+    			<a href="highTop.html">
 					<img src="images/Products/HighTop.jpg" width="200px" height="200px"></img>
 				</a>
 				</th>
-    			<th> <img src="images/Products/canvasShoe.jpg" width="200px" height="200px"> </img></th>
-    			<th> <img src="images/Products/thong.jpg" width="200px" height="200px"></img></th>
-    			<th> <img src="images/Products/bootShoe.jpg" width="200px" height="200px"></img></th>
-    			<th> <img src="images/Products/flats.jpg" width="200px" height="200px"></img></th>
+    			<th><a href="canvas.html"> <img src="images/Products/canvasShoe.jpg" width="200px" height="200px"></img></a></th>
+    			<th><a href="thong.html"> <img src="images/Products/thong.jpg" width="200px" height="200px"></img></a></th>
+    			<th><a href="boot.html"> <img src="images/Products/bootShoe.jpg" width="200px" height="200px"></img></a></th>
+    			<th><a href="flat.html"> <img src="images/Products/flats.jpg" width="200px" height="200px"></img></a></th>
     		</tr>
     		<tr> <!-- <div id = "text"><h1>1. High Top Base </h1></br> Basic $90 </div> -->
     			<th> <div id = "text"><h1>1. HighTop Base </h1></br> Basic $90 </div></th>
@@ -162,7 +158,21 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<div class="footer_mid">
 			<div class="wrap">
 				<div class="footer">
-					
+					<div class="f_search">
+						<form>
+							<input type="text" value="" placeholder="Enter email for newsletter" />
+							<input type="submit" onClick="Newsletter()" class="newsletter" value=""/>
+						</form>
+						
+					</div>
+					<div class="soc_icons">
+							<ul>
+								<li><a class="icon1" target="_blank" href="https://www.facebook.com/pages/Custom-shoes/450584661782353?fref=ts"></a></li>
+								<li><a class="icon2" target="_blank" href="https://twitter.com/customers_shoes"></a></li>
+								<li><a class="icon3" target="_blank" href="https://plus.google.com/+shoesofprey/posts"></a></li>
+								<li><a class="icon4" target="_blank" href="https://www.linkedin.com/company/woodys-custom-kicks-and-apparel"></a></li>
+							</ul>	
+					</div>
 					<div class="clear"> </div>
 				</div>
 			</div>
